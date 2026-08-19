@@ -156,6 +156,17 @@ export const skillGroups = [
   },
 ] as const;
 
-export type SkillGroup = (typeof skillGroups)[number];
-export type Skill = SkillGroup["skills"][number];
-export type SkillIconName = Skill["icon"];
+export type SkillIconName = (typeof skillGroups)[number]["skills"][number]["icon"];
+
+export type Skill = {
+  name: string;
+  icon: SkillIconName;
+  description: string;
+};
+
+export type SkillGroup = {
+  id: (typeof skillGroups)[number]["id"];
+  title: string;
+  description: string;
+  skills: readonly Skill[];
+};

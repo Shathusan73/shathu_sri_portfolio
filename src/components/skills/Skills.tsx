@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Reveal } from "@/components/ui/Reveal";
 import { SawadHeading } from "@/components/ui/SawadHeading";
 import { TechIcon } from "@/components/ui/TechIcon";
-import { skillGroups } from "@/data/skills";
+import { skillGroups, type Skill, type SkillGroup } from "@/data/skills";
 import { cn } from "@/lib/cn";
 
 const tabLabels = [
@@ -20,10 +20,12 @@ const tabLabels = [
 export function Skills() {
   const [activeTab, setActiveTab] = useState("all");
 
-  const visibleGroups =
-    activeTab === "all" ? skillGroups : skillGroups.filter((g) => g.id === activeTab);
+  const visibleGroups: SkillGroup[] =
+    activeTab === "all"
+      ? [...skillGroups]
+      : skillGroups.filter((g) => g.id === activeTab);
 
-  const allSkills = visibleGroups.flatMap((g) => g.skills);
+  const allSkills: Skill[] = visibleGroups.flatMap((g) => [...g.skills]);
 
   return (
     <section id="skills" className="home-section">
