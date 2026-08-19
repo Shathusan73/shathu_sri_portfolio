@@ -6,6 +6,8 @@ import { TechIcon } from "@/components/ui/TechIcon";
 import { skillGroups, type SkillIconName } from "@/data/skills";
 import { cn } from "@/lib/cn";
 
+
+
 const featured = [
   { name: "Next.js", icon: "nextjs" as const },
   { name: "React", icon: "react" as const },
