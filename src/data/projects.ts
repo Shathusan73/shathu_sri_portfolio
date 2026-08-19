@@ -99,7 +99,7 @@ export const projects: Project[] = [
     description:
       "An applied computer-vision platform that classifies product imagery, then feeds those labels back into search, catalogues, and operational workflows.",
     technologies: ["Next.js", "React", "Python", "TensorFlow", "CNN", ".NET", "PostgreSQL"],
-    github: "https://github.com/shathusansritharar",
+    github: "https://github.com/Shathusan73",
     live: undefined,
     featured: true,
     status: "shipped",
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     description:
       "A full dating product spanning onboarding, discovery, profiles, and operations — with a public experience and a dedicated admin surface.",
     technologies: ["Next.js", ".NET", "PostgreSQL", "Redux"],
-    github: "https://github.com/shathusansritharar",
+    github: "https://github.com/Shathusan73",
     featured: true,
     status: "shipped",
     accent: "violet",
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     description:
       "A property marketplace for listings, bidding, and management — covering the journey from published house to completed interest.",
     technologies: ["Next.js", ".NET", "PostgreSQL"],
-    github: "https://github.com/shathusansritharar",
+    github: "https://github.com/Shathusan73",
     featured: true,
     status: "shipped",
     accent: "cyan",

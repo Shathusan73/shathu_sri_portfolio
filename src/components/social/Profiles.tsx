@@ -2,7 +2,7 @@
 
 import { ArrowUpRight, Globe, Mail, Phone } from "lucide-react";
 
-import { GitHubIcon } from "@/components/ui/BrandIcons";
+import { FiverrIcon, GitHubIcon } from "@/components/ui/BrandIcons";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -20,6 +20,11 @@ const platformMeta: Record<string, { icon: IconComponent; color: string; descrip
     icon: Globe as IconComponent,
     color: "text-white",
     description: "Personal site and selected product work.",
+  },
+  fiverr: {
+    icon: FiverrIcon,
+    color: "text-[#1DBF73]",
+    description: "Hire me for websites, product UI, and software gigs.",
   },
   email: {
     icon: Mail as IconComponent,

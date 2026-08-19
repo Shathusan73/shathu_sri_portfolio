@@ -1,13 +1,14 @@
 import type { ComponentType } from "react";
 import { Globe, Mail } from "lucide-react";
 
-import { GitHubIcon } from "@/components/ui/BrandIcons";
+import { FiverrIcon, GitHubIcon } from "@/components/ui/BrandIcons";
 import { social, type SocialId } from "@/data/social";
 import { cn } from "@/lib/cn";
 
 const iconMap: Record<SocialId, ComponentType<{ className?: string }>> = {
   github: GitHubIcon,
   website: Globe,
+  fiverr: FiverrIcon,
   email: Mail,
 };
 

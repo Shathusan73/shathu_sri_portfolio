@@ -4,7 +4,7 @@ import { ArrowUpRight, CheckCircle2, Copy, Globe, Mail, MapPin } from "lucide-re
 import { useState } from "react";
 
 import { AIContactAgent } from "@/components/ai-contact/AIContactAgent";
-import { GitHubIcon } from "@/components/ui/BrandIcons";
+import { FiverrIcon, GitHubIcon } from "@/components/ui/BrandIcons";
 import { Reveal } from "@/components/ui/Reveal";
 import { SawadHeading } from "@/components/ui/SawadHeading";
 import { site } from "@/data/site";
@@ -77,7 +77,7 @@ export function Contact() {
             {social
               .filter((item) => item.id !== "email")
               .map((item, index) => {
-                const Icon = item.id === "github" ? GitHubIcon : Globe;
+                const Icon = item.id === "github" ? GitHubIcon : item.id === "fiverr" ? FiverrIcon : Globe;
 
                 return (
                   <Reveal key={item.id} delay={0.16 + index * 0.05} direction="right">

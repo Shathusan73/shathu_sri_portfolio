@@ -15,6 +15,15 @@ export function GitHubIcon({ className }: IconProps) {
   );
 }
 
+export function FiverrIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden>
+      <circle cx="16.2" cy="5.35" r="1.45" />
+      <path d="M8.15 8.4H6.2V10.7h1.95v8.55h2.7V10.7h2.05c1.95 0 3.2.55 3.85 2.55l2.35-1.85C17.9 8.85 16.05 8.4 13.2 8.4h-2.3V6.95c0-.7.3-1.05 1.05-1.05h.95V3.7h-1.35C9.35 3.7 8.15 5 8.15 6.95V8.4Z" />
+    </svg>
+  );
+}
+
 export function LinkedInIcon({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden>

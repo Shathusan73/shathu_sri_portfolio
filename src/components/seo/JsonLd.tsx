@@ -16,7 +16,7 @@ export function JsonLd() {
     },
     description: site.summary,
     sameAs: social
-      .filter((item) => item.id === "github" || item.id === "website")
+      .filter((item) => item.id === "github" || item.id === "website" || item.id === "fiverr")
       .map((item) => item.href),
   };
 

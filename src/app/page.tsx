@@ -8,6 +8,7 @@ import { ProfileCard } from "@/components/hero/ProfileCard";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Projects } from "@/components/projects/Projects";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { GitHubActivity } from "@/components/github/GitHubActivity";
 import { Skills } from "@/components/skills/Skills";
 import { Stack } from "@/components/stack/Stack";
 import { CustomCursor } from "@/components/ui/CustomCursor";
@@ -34,6 +35,7 @@ export default function Home() {
               <Projects />
               <Experience />
               <Skills />
+              <GitHubActivity />
               <Stack />
               <Education />
               <Contact />

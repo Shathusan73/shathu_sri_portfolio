@@ -1,15 +1,23 @@
+import { FIVERR_HANDLE, FIVERR_PROFILE_URL } from "@/data/fiverr";
+
 export const social = [
   {
     id: "github",
     label: "GitHub",
-    href: "https://github.com/shathusansritharar",
-    handle: "shathusansritharar",
+    href: "https://github.com/Shathusan73",
+    handle: "Shathusan73",
   },
   {
     id: "website",
     label: "Website",
-    href: "https://srishathu.dev",
-    handle: "srishathu.dev",
+    href: "https://shathusridevs.vercel.app",
+    handle: "shathusridevs.vercel.app",
+  },
+  {
+    id: "fiverr",
+    label: "Fiverr",
+    href: FIVERR_PROFILE_URL,
+    handle: FIVERR_HANDLE,
   },
   {
     id: "email",

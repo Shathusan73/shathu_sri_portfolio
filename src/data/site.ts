@@ -40,7 +40,7 @@ export const site = {
   },
   cvHref: "/cv",
   profileImage: "/profile.png",
-  url: "https://srishathu.dev",
+  url: "https://shathusridevs.vercel.app",
 } as const;
 
 export type Site = typeof site;

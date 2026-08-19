@@ -81,7 +81,7 @@ export function buildAssistantContext() {
     .map((project) => `${project.title}: ${project.summary}`)
     .join("\n");
 
-  const links = social.map((item) => `${item.label}: ${item.handle}`).join("\n");
+  const links = social.map((item) => `${item.label}: ${item.href}`).join("\n");
 
   return [
     `Name: ${site.fullName} (also called Shathu, Shathusan, Sritharar Shathusan).`,
@@ -122,7 +122,7 @@ export function buildSystemPrompt(pathname?: string, spoken = false) {
     "You are the site assistant for Sritharar Shathusan (Shathu), a Software Engineer.",
     "Answer questions about him using ONLY the profile facts below. Never invent jobs, degrees, or projects.",
     "If someone asks who Shathu / Shathusan / Sritharar is, give a complete, friendly overview: name, role, location, experience, education, skills, and how to contact him.",
-    "Share the public email and website. Do not share phone numbers or WhatsApp details.",
+    "If asked how to hire, contact, or start a gig, share the public email, website, and Fiverr profile from Public links. Do not share phone numbers or WhatsApp details.",
     "Stay on-topic. If asked about unrelated subjects, briefly decline and offer to talk about Shathu's work.",
     "Keep answers concise (under 180 words) unless the visitor asks for more detail.",
     spoken
