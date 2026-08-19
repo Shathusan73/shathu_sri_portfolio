@@ -11,6 +11,8 @@ import { cn } from "@/lib/cn";
 import { emptyInquiry, inquiryProgress, type ProjectInquiry } from "@/lib/contactAgent";
 import { usePrefersReducedMotion } from "@/lib/hooks/usePrefersReducedMotion";
 
+
+
 import { ChatMessage, TypingIndicator } from "./ChatMessage";
 import { ConsentCheckbox } from "./ConsentCheckbox";
 import { ContactSummary } from "./ContactSummary";
